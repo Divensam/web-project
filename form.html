@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+</head>
+<body>
+
+<h1>Contact Form</h1>
+
+<form action="form.php" method="post">
+
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your name">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Your email address">
+
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone" placeholder="Your phone number">
+  </fieldset>
+
+  <fieldset>
+    <legend>Message</legend>
+
+    <textarea name="message" id="message" rows="10" cols="50" placeholder="Your message"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Date of Birth</legend>
+
+    <input type="date" name="dob" id="dob">
+  </fieldset>
+
+  <fieldset>
+    <legend>Favorite Color</legend>
+
+    <select name="color" id="color">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="purple">Purple</option>
+    </select>
+  </fieldset>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
